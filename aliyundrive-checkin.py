@@ -42,9 +42,9 @@ def daily_check(access_token):
                 day_json = result['result']['signInLogs'][i-1]
                 # print(day_json)
                 if not day_json['isReward']:
-                    content = '签到成功，今日未获得奖励'
+                    content = 'TG: https://t.me/+qWEhwrx8lCZiYTc1 \n 签到成功，今日未获得奖励'
                 else:
-                    content = '本月累计签到{}天,今日签到获得{}{}'.format(result['result']['signInCount'],
+                    content = 'TG: https://t.me/+qWEhwrx8lCZiYTc1 \n 本月累计签到{}天,今日签到获得{}{}'.format(result['result']['signInCount'],
                                                                      day_json['reward']['name'],
                                                                      day_json['reward']['description'])
                 print(content)
