@@ -1,3 +1,14 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+"""
+TG: https://t.me/+qWEhwrx8lCZiYTc1
+cron: 1 7 * * *
+new Env('阿里云盘签到');
+变量 export refresh_token="xxxx"
+"""
+
+
 import json
 import  requests
 import os
@@ -47,7 +58,7 @@ def mian():
     access_token = update_token(refresh_token)
     print('更新成功，开始进行签到')
     content = daily_check(access_token)
-    send('阿里云盘签到', content)
+    send('阿里云盘签到', content)  # 消息发送
 
 
 if __name__ == '__main__':
